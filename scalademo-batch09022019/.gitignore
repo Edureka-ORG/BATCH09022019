@@ -1,0 +1,44 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+org.eclipse.*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+/bin/
+*.class
+*.cache
+.cache*
+.classpath
+.history
+*-batch17112018*
+*.xml
+export*
+*.zip
+input*
+ivy-*
+out*
+*.eclipse*
+*.xml.*
+copy*
+data*
+active.json
