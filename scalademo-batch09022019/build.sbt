@@ -6,3 +6,4 @@ lazy val root = (project in file("."))
     scalaVersion := "2.11.8",
     libraryDependencies += scalaTest % Test
   )
+libraryDependencies += "org.apache.spark" %% "spark-core" % "2.1.1"
