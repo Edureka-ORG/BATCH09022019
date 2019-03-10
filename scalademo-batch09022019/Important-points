@@ -52,8 +52,6 @@ sqoop import \
 -m 1
 
 
-insert into customers(id,name,age,address) values(35,'customer35',35,"address 35");
-
 sqoop import \
 --connect jdbc:mysql://mysqldb.edu.cloudlab.com/sqoop_demo \
 --username labuser \
@@ -63,7 +61,7 @@ sqoop import \
 --split-by id \
 --incremental append \
 --check-column id \
---last-value 13 \
+--last-value 14 \
 -m 1 
 
 
@@ -72,14 +70,3 @@ sqoop eval \
 --username labuser \
 --password edureka \
 --query "select * from customers order by id " 
-
-sqoop import \
---connect jdbc:mysql://mysqldb.edu.cloudlab.com/sqoop_demo \
---username labuser \
---password edureka \
---query "select * from customers WHERE \$CONDITIONS"  \
---target-dir /user/edureka_144865/SQOOPSQL \
---split-by id
-
-
-10:08 SparkRDD
